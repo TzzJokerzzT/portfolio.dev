@@ -1,0 +1,37 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCIE = [
+  {
+    date: "2020 - Present...",
+    title: "Front End Developer",
+    company: "Lean Tech",
+    description:
+      "Development digital solutions to maximize efficiency and performance. I've distinguished by working on AI-driven projects for Figma, enhancing design workflows with intelligent automation and smart features.",
+    link: "https://www.leangroup.com/solutions-and-services/technology",
+  },
+  {
+    date: "2019 - 2023",
+    title: "Freelance Frontend Developer",
+    company: "Freelance",
+    description:
+      "Developed dynamic, high-performance web applications using React and Next.js. My focus is on delivering responsive, user-friendly interfaces that leverage the latest in web technologies. With a keen eye for detail and a commitment to quality, I provide tailored solutions that meet the unique needs of each client, ensuring their digital presence is both impactful and efficient.",
+  },
+  {
+    date: "2018 - 2019",
+    title: "Front End Developer",
+    company: "Mother Bernarda Hospital",
+    description:
+      "I led the development of the clinic's website and the development of the internal platform that the clinic uses to review patients and generate medical records.",
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>

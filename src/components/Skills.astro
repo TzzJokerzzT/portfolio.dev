@@ -1,0 +1,129 @@
+---
+import CSS from "./icons/CSS.astro";
+import Cypress from "./icons/Cypress.astro";
+import Git from "./icons/Git.astro";
+import GitHub from "./icons/GitHub.astro";
+import GraphQL from "./icons/GraphQL.astro";
+import HTML from "./icons/HTML.astro";
+import Javascript from "./icons/Javascript.astro";
+import Jest from "./icons/Jest.astro";
+import MaterialUI from "./icons/MaterialUI.astro";
+import NextJS from "./icons/NextJS.astro";
+import NPM from "./icons/NPM.astro";
+import PNPM from "./icons/PNPM.astro";
+import React from "./icons/React.astro";
+import ReactQuery from "./icons/ReactQuery.astro";
+import ReactRouter from "./icons/ReactRouter.astro";
+import ReduxToolkit from "./icons/ReduxToolkit.astro";
+import Tailwind from "./icons/Tailwind.astro";
+import Typescript from "./icons/Typescript.astro";
+import Vitest from "./icons/Vitest.astro";
+import WebComponents from "./icons/WebComponents.astro";
+import Yarn from "./icons/Yarn.astro";
+
+const SKILL_ICONS: string | any = {
+  CSS,
+  Cypress,
+  Git,
+  GitHub,
+  GraphQL,
+  HTML,
+  Javascript,
+  Jest,
+  MaterialUI,
+  NextJS,
+  NPM,
+  PNPM,
+  React,
+  ReactQuery,
+  ReactRouter,
+  ReduxToolkit,
+  Tailwind,
+  Typescript,
+  Vitest,
+  WebComponents,
+  Yarn,
+};
+const SKILLS = [
+  {
+    name: "HTML",
+  },
+  {
+    name: "CSS",
+  },
+  {
+    name: "Javascript",
+  },
+  {
+    name: "React",
+  },
+  {
+    name: "Cypress",
+  },
+  {
+    name: "Git",
+  },
+  {
+    name: "GitHub",
+  },
+  {
+    name: "GraphQL",
+  },
+  {
+    name: "Jest",
+  },
+  {
+    name: "MaterialUI",
+  },
+  {
+    name: "NextJS",
+  },
+  {
+    name: "NPM",
+  },
+  {
+    name: "PNPM",
+  },
+  {
+    name: "ReactQuery",
+  },
+  {
+    name: "ReactRouter",
+  },
+  {
+    name: "ReduxToolkit",
+  },
+  {
+    name: "Tailwind",
+  },
+  {
+    name: "Typescript",
+  },
+  {
+    name: "Vitest",
+  },
+  {
+    name: "WebComponents",
+  },
+  {
+    name: "Yarn",
+  },
+];
+---
+
+<ul
+  class="flex flex-wrap gap-[1rem] justify-center align-center text-center gap-y-16"
+>
+  {
+    SKILLS.map(({ name }) => {
+      const Icon = SKILL_ICONS[name];
+
+      return (
+        <li class="flex flex-col justify-center align-center">
+          {Icon && <Icon className="m-[0.5rem] w-[4rem] h-[4rem]" />}{" "}
+          <span>{name}</span>
+        </li>
+      );
+    })
+  }
+</ul>
