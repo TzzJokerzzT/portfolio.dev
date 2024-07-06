@@ -20,6 +20,7 @@ import Typescript from "./icons/Typescript.astro";
 import Vitest from "./icons/Vitest.astro";
 import WebComponents from "./icons/WebComponents.astro";
 import Yarn from "./icons/Yarn.astro";
+import Ticker from "framer-motion-ticker";
 
 const SKILL_ICONS: string | any = {
   CSS,
@@ -121,7 +122,6 @@ const SKILLS = [
       return (
         <li class="flex flex-col justify-center align-center">
           {Icon && <Icon className="m-[0.5rem] w-[4rem] h-[4rem]" />}{" "}
-          <span>{name}</span>
         </li>
       );
     })
